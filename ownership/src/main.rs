@@ -1,13 +1,20 @@
 fn main() {
-    let s1 = String::from("hello");
+    
+    let s1 = givesOwnership();
 
-    let (s2, len) = calculate_length(s1);
+    let s2 = String::from("Hello");
 
-    println!("The length of '{s2}' is {len}.");
+    let s3 = takesAndGivesOwnership(s2);
+
 }
 
-fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len();
+fn givesOwnership() -> String {
+    let someString = String::from("yours");
 
-    (s, length)
+    someString
+}
+
+fn takesAndGivesOwnership(aString: String) -> String{
+
+    aString
 }
