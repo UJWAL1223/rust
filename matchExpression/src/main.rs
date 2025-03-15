@@ -26,7 +26,16 @@ fn value_incents(coin: Coin) -> u8 {
     }
 }
 
+fn plusOne(x: Option<i32>) -> Option<i32>{
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
+    }
 
+    
+}
 fn main(){
-
+    let five = Some(5);
+    let six = plusOne(five);
+    let none = plusOne(None);
 }
