@@ -26,6 +26,7 @@ fn value_incents(coin: Coin) -> u8 {
     }
 }
 
+
 fn main(){
 
 }
